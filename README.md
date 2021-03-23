@@ -1,5 +1,7 @@
 # vue-admin-template
 
+**在线查看地址(移动端):** http://yaobawu.cn1.utools.club/dist/#/
+
 English | [简体中文](./README-zh.md)
 
 > A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
