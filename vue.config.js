@@ -26,9 +26,9 @@ module.exports = {
   //   proxy: {
   //     // 匹配所有以 /api 开头的url
   //     '/api': {
-  //         // 请求的目标主机
+  //         // 需要代理地址
   //         target: 'https://api.asilu.com/bg/',
-  //         changeOrigin: true,
+  //         changeOrigin: true, //开启代理
   //         // 这样重写会把路径中 /api 消去
   //         pathRewrite: {
   //           '^/api': ''
