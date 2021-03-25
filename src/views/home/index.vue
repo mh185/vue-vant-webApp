@@ -77,16 +77,25 @@ export default {
       List: [
         {
           id: "/humor",
-          url: require("@/assets/content/btn4.png"),
+          url: require("@/assets/content/btn1.png"),
           title: "搞笑",
         },
         {
-          id: "/news",
-          url: require("@/assets/content/btn5.png"),
-          title: "新闻",
+          id: "/dictionaries",
+          url: require("@/assets/content/btn2.png"),
+          title: "字典",
         },
         {
+          id: "/garbageSorting",
           url: require("@/assets/content/btn3.png"),
+          title: "垃圾分类",
+        },
+        {
+          url: require("@/assets/content/btn4.png"),
+          title: "标签",
+        },
+        {
+          url: require("@/assets/content/btn5.png"),
           title: "标签",
         },
         {
@@ -106,15 +115,7 @@ export default {
           title: "标签",
         },
         {
-          url: require("@/assets/content/btn11.png"),
-          title: "标签",
-        },
-        {
-          url: require("@/assets/content/btn13.png"),
-          title: "标签",
-        },
-        {
-          url: require("@/assets/content/btn14.png"),
+          url: require("@/assets/content/btn10.png"),
           title: "标签",
         },
       ],

@@ -1,6 +1,11 @@
 <template>
   <div class="box">
-    <goBack :title="this.title" ref="titleGo" @click="goBackChange" />
+    <goBack
+      :title="this.title"
+      ref="titleGo"
+      @click="goBackChange"
+      class="goBack"
+    />
     <div class="content">
       <img :src="this.img" alt="" class="imgTitle" />
       <div v-html="this.content" class="content"></div>
@@ -51,11 +56,11 @@ export default {
       getNewDetails(params).then((res) => {
         const { content, cover, images, ptime, source, title } = res.data;
         this.content = content; // 内容
-        this.img = cover;  // 首图
-        this.images = images;  // 图片数组
-        this.title = title;  // 标题
-        this.source = source;  // 发布方
-        this.ptime = ptime;  // 时间
+        this.img = cover; // 首图
+        this.images = images; // 图片数组
+        this.title = title; // 标题
+        this.source = source; // 发布方
+        this.ptime = ptime; // 时间
       });
     },
     goBackChange() {
@@ -71,6 +76,7 @@ export default {
   background-color: #f7f8fa;
   .content {
     font-size: 0.896rem;
+    margin-top: 3.2rem;
     .imgTitle {
       width: 100%;
     }
@@ -84,6 +90,10 @@ export default {
     span {
       margin-left: 0.64rem;
     }
+  }
+  .goBack {
+    position: fixed;
+    top: 0;
   }
 }
 </style>

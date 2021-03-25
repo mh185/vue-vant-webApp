@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-
+// 不需要权限加载得路由
 export const constantRoutes = [{
     path: '/',
     component: () => import('@/views/home/index'),
@@ -18,6 +18,24 @@ export const constantRoutes = [{
     component: () => import('@/views/humor/index'),
     meta: {
       keepAlive: true
+    },
+    hidden: true
+  },
+  //字典
+  {
+    path: '/dictionaries',
+    component: () => import('@/views/dictionaries/index'),
+    meta: {
+      keepAlive: false
+    },
+    hidden: true
+  },
+  //垃圾分类
+  {
+    path: '/garbageSorting',
+    component: () => import('@/views/garbageSorting/index'),
+    meta: {
+      keepAlive: false
     },
     hidden: true
   },

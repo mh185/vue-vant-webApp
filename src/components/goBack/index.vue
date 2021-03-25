@@ -34,7 +34,7 @@ export default {
     height: 1.28rem;
     position: absolute;
     left: 0.64rem;
-    top: .96rem;
+    top: 1rem;
   }
   .title {
     font-size: 0.768rem;
