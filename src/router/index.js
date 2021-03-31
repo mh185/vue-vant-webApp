@@ -39,6 +39,15 @@ export const constantRoutes = [{
     },
     hidden: true
   },
+  //生成二维码
+  {
+    path: '/code',
+    component: () => import('@/views/code/index'),
+    meta: {
+      keepAlive: false
+    },
+    hidden: true
+  },
   //新闻
   {
     path: '/news',

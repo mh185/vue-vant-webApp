@@ -1,15 +1,27 @@
 <template>
   <div class="box">
-    <p @click="btnClear">返回</p>
-    <img class="img" :src="this.url" alt="" />
-    <p class="title">{{ content }}</p>
+    <goBack
+      :title="this.title"
+      ref="titleGo"
+      @click="goBackChange"
+      class="goBack"
+    />
+    <div class="content">
+      <img class="img" :src="this.url" alt="" />
+      <p class="title">{{ content }}</p>
+    </div>
   </div>
 </template>
 
 <script>
+import goBack from "@/components/goBack";
 export default {
+  components: {
+    goBack,
+  },
   data() {
     return {
+      title: "返回",
       content: "",
       url: "",
     };
@@ -22,17 +34,28 @@ export default {
     btnClear() {
       this.$router.push({ path: "/" });
     },
+    goBackChange() {
+      this.$refs.titleGo.upOneLevel();
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .box {
-  .img {
-    width: 100%;
-  }
-  .title{
+  .content {
+    background-color: #f7f8fa;
+    .img {
+      width: 100%;
+      margin-top: .64rem;
+    }
+    .title {
       font-size: 1.024rem;
+    }
+  }
+  .goBack {
+    position: fixed;
+    top: 0;
   }
 }
 </style>

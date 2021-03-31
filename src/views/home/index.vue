@@ -47,16 +47,21 @@
         </li>
       </ul>
     </div>
-    <div>
-      <van-grid square>
-        <van-grid-item
-          v-for="value in 8"
-          :key="value"
-          icon="photo-o"
-          text="文字"
-        />
-      </van-grid>
-    </div>
+    <!-- <div class="history">
+      <van-divider
+        :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
+      >
+        历史与今
+      </van-divider>
+      <div class="img-content">
+        <ul>
+          <li>
+            <div class="img"></div>
+            <div class="content"></div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
     <div class="famous-saying">
       <p>{{ title }}</p>
       <p v-if="this.title == ''">{{ titleTwo }}</p>
@@ -77,22 +82,23 @@ export default {
       List: [
         {
           id: "/humor",
-          url: require("@/assets/content/btn1.png"),
-          title: "搞笑",
+          url: require("@/assets/content/laugh.png"),
+          title: "笑话",
         },
         {
           id: "/dictionaries",
-          url: require("@/assets/content/btn2.png"),
+          url: require("@/assets/content/dictionaries.png"),
           title: "字典",
         },
         {
           id: "/garbageSorting",
-          url: require("@/assets/content/btn3.png"),
+          url: require("@/assets/content/type.png"),
           title: "垃圾分类",
         },
         {
-          url: require("@/assets/content/btn4.png"),
-          title: "标签",
+          id: '/code',
+          url: require("@/assets/content/code.png"),
+          title: "生成二维码",
         },
         {
           url: require("@/assets/content/btn5.png"),
@@ -109,15 +115,7 @@ export default {
         {
           url: require("@/assets/content/btn8.png"),
           title: "标签",
-        },
-        {
-          url: require("@/assets/content/btn9.png"),
-          title: "标签",
-        },
-        {
-          url: require("@/assets/content/btn10.png"),
-          title: "标签",
-        },
+        }
       ],
       bannerList: [
         {
@@ -250,15 +248,17 @@ export default {
   .content {
     width: 95%;
     height: 10.24rem;
-    margin: 0 auto;
+    margin: .32rem auto;
     ul {
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       overflow: hidden;
       overflow-x: scroll;
       li {
-        margin: 0 0.64rem;
+        width: 25%;
+        text-align: center;
         img {
           width: 3.2rem;
           height: 3.2rem;
@@ -271,6 +271,31 @@ export default {
       }
     }
   }
+  // .history {
+  //   .img-content {
+  //     width: 100%;
+  //     height: 9.6rem;
+  //     margin-bottom: 0.96rem;
+  //     background-color: red;
+  //     overflow: hidden;
+  //     overflow-y: scroll;
+  //     ul {
+  //       li {
+  //         margin-bottom: .32rem;
+  //         height: 6.4rem;
+  //         background-color: yellow;
+  //         .img {
+  //           width: 40%;
+  //           display: inline-block;
+  //         }
+  //         .content {
+  //           display: inline-block;
+  //           width: 60%;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 @media screen and (max-width: 500px) {
   .my-swipe .van-swipe-item {

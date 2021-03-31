@@ -76,9 +76,9 @@ export default {
   background-color: #f7f8fa;
   .content {
     font-size: 0.896rem;
-    margin-top: 3.2rem;
     .imgTitle {
       width: 100%;
+      margin-top: 3.2rem;
     }
     .images {
       width: 100%;
