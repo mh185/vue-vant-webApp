@@ -1,6 +1,6 @@
 # vue-vant-webApp
 
-**在线查看地址(移动端):** http://yaobawu.cn1.utools.club/dist/#/
+**在线查看地址(移动端):** http://mh185.gitee.io/vue-vant-web-app || http://yaobawu.cn1.utools.club/dist/#/
 
 > 移动端webApp vue框架vant库 & axios & vue-router & rem百分比布局 & vue-jsonp处理get请求跨域问题
 
