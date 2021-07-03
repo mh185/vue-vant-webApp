@@ -96,7 +96,7 @@ export default {
           title: "垃圾分类",
         },
         {
-          id: '/code',
+          id: "/code",
           url: require("@/assets/content/code.png"),
           title: "生成二维码",
         },
@@ -115,7 +115,7 @@ export default {
         {
           url: require("@/assets/content/btn8.png"),
           title: "标签",
-        }
+        },
       ],
       bannerList: [
         {
@@ -248,7 +248,7 @@ export default {
   .content {
     width: 95%;
     height: 10.24rem;
-    margin: .32rem auto;
+    margin: 0.32rem auto;
     ul {
       width: 100%;
       display: flex;
