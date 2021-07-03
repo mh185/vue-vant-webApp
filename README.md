@@ -1,12 +1,12 @@
 # vue-vant-webApp
 
-**在线查看地址(移动端):** http://yaobawu.cn1.utools.club/dist/#/
+**在线查看地址(移动端):** http://mh185.gitee.io/vue-vant-web-app || http://yaobawu.cn1.utools.club/dist/#/
+
+>注: pc端打开后按F12开启手机模式查看
 
 > 移动端webApp vue框架vant库 & axios & vue-router & rem百分比布局 & vue-jsonp处理get请求跨域问题
 
 **接口地址** https://www.mxnzp.com/
-
-> 感谢穆仙念线提供接口
 
 ## 项目运行
 
